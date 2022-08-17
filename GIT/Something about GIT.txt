@@ -1,0 +1,50 @@
+gerar ssh pub e privada no caminho expecificado.
+(ed25519 é o tipo de criptografia da chave)
+ssh-keygen -t ed25519 -C viniciusfelipipereira@gmail.com
+
+
+cat [arquivo] para ler o arquivo
+
+Inicializa o ssh Agent: entidade que fica responsável por manusear as chaves
+(retorna o numero da seção)
+eval $(ssh-agent -s)
+
+
+Informar para o ssh a chave privada para descriptografar as mensagens recebidas
+ssh-add [arquivo_Chave publica]
+
+
+Para clonar repositorio com ssh configurado, é necessário dar o git clone passando o caminho ssh
+
+git init -> cria repositorio no git
+
+git status -> demonstra o status do arquivo
+
+git add ou git add *-> move os arquivos de untrached pra staged.
+
+git commit -m "" -> envia para o git os arquivos staged.
+
+--------------------------------------------------
+Configuracoes 
+Para refazer configurações de email:
+Something\ about\ GIT.txt git config --global --unset user.email
+Something\ about\ GIT.txt git config --global --unset user.nickname
+
+Configuração de email:
+Something\ about\ GIT.txt git config --global user.email "email"
+Something\ about\ GIT.txt git config --global user.nickname "nick"
+
+
+--------------------------------------------------
+Inserindo repositorio github no git
+
+git init 
+
+git remote add origin [link repositorio]
+
+git remote -v -> lista os repositorios remotos cadastrados
+
+	origin -> alias apontado para o endereço web do repositorio
+
+
+echo > [nome do arquivo].extensao dados
