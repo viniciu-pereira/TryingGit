@@ -47,4 +47,20 @@ git remote -v -> lista os repositorios remotos cadastrados
 	origin -> alias apontado para o endereço web do repositorio
 
 
-echo > [nome do arquivo].extensao dados
+echo > [nome do arquivo].extensao [possiveis dados para o arquivo (escrever no arquivo)]
+
+--------------------------------------------------
+Enviando e puxando 
+
+Enviar arquivos para o github 
+	git add ou git add *
+
+	git commit -m ""
+
+	git push origin master
+
+Puxando arquivos
+
+	git pull origin master
+
+
